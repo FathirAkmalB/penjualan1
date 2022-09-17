@@ -57,7 +57,7 @@ if(mysqli_num_rows($query) < 1){
             <td><Label><input value="<?php echo $pel['email']?>" required="required" type="email" name="email"></Label></td>
         </tr>
     </table>
-    <input type="submit" name="edit" value="edit">
+    <input type="submit" name="edit" value="edit" onclick="return confirm('apakah anda yakin ingin mengubah data tersebut?')">
 </form>
 </body>
 </html>

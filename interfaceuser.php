@@ -46,7 +46,7 @@
             <td>$pel[email]</td>
             <td>
                 <a href='formedit.php?idpel=".$pel['id_pelanggan']."'>Edit</a>
-                <a href='hapus.php?idpel=".$pel['id_pelanggan']."'>Hapus</a>
+                <a href='hapus.php?idpel=".$pel['id_pelanggan']."' onClick=\" return confirm('apakah anda yakin ingin menghapus data ini?');\">Hapus</a>
             </td>
             </tr>
         ";
