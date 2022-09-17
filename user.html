@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="interfaceuser.php"> <= Kembali </a>
+    <h3>Tambah Data Pelanggan</h3>
+    <form action="save.php" method="post">
+        <table>
+        <tr>
+            <td>Id Pelanggan</td>
+            <td>:</td>
+            <td><Label><input required="required" type="number" name="id_pelanggan"></td>
+            </tr>
+            <tr>
+                <td>Nama Pelanggan</td>
+                <td>:</td>
+                <td><Label><input required="required" type="text" name="nama_pelanggan"></td>
+                </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td><Label><textarea required="required" name="alamat"cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td>No.Telephone</td>
+            <td>:</td>
+            <td><Label><input required="required" type="number" name="telpon"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><Label><input required="required" type="email" name="email"></td>
+        </tr>
+    </table>
+    <input type="submit" name="save" value="save">
+    </form>
+    
+</body>
+</html>
