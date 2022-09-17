@@ -1,7 +1,7 @@
 <?php
 include 'koneksi.php';
 
-// if (isset($_GET['id'])){
+// if (isset($_GET['idpel'])){
 //     header('location: tampilpelanggan.php');
 // }
 

@@ -6,7 +6,7 @@ include 'koneksi.php' ;
 $id_pelanggan = $_GET['idpel'];
 $sql = "SELECT * FROM pelanggan WHERE id_pelanggan='$id_pelanggan'";
 $query= mysqli_query($connect,$sql);
-$pel = mysqli_fetch_assoc($query);
+$pel = mysqli_fetch_array($query);
 
 if(mysqli_num_rows($query) < 1){
     die("Data tidak ditemukan");
@@ -34,27 +34,27 @@ if(mysqli_num_rows($query) < 1){
         <tr>
             <td>Id Pelanggan</td>
             <td>:</td>
-            <td><Label> <input value="<?php echo $pel['id_pelanggan']?>" required="required" type="hidden " name="id_pelanggan"></td>
+            <td><Label> <input value="<?php echo $pel['id_pelanggan']?>" required="required" type="hidden" name="id_pelanggan"></Label></td>
             </tr>
             <tr>
                 <td>Nama Pelanggan</td>
                 <td>:</td>
-                <td><Label><input value="<?php echo $pel['nama_pelanggan']?>" required="required" type="text" name="nama_pelanggan"></td>
+                <td><Label><input value="<?php echo $pel['nama_pelanggan']?>" required="required" type="text" name="nama_pelanggan"></Label></td>
                 </tr>
         <tr>
             <td>Alamat</td>
             <td>:</td>
-            <td><Label><textarea required="required" name="alamat"cols="30" rows="5"><?php echo $pel['alamat']?></textarea></textarea></td>
+            <td><Label><textarea required="required" name="alamat"cols="30" rows="5"><?php echo $pel['alamat']?></textarea></td>
         </tr>
         <tr>
             <td>No.Telephone</td>
             <td>:</td>
-            <td><Label><input value="<?php echo $pel['telpon']?>" required="required" type="number" name="telpon"></td>
+            <td><Label><input value="<?php echo $pel['telpon']?>" required="required" type="number" name="telpon"></Label></td>
         </tr>
         <tr>
             <td>Email</td>
             <td>:</td>
-            <td><Label><input value="<?php echo $pel['email']?>" required="required" type="email" name="email"></td>
+            <td><Label><input value="<?php echo $pel['email']?>" required="required" type="email" name="email"></Label></td>
         </tr>
     </table>
     <input type="submit" name="edit" value="edit">
