@@ -34,22 +34,22 @@ if(mysqli_num_rows($query) < 1){
         <tr>
             <td>Id Pelanggan</td>
             <td>:</td>
-            <td><Label> <input value="<?php echo $pel['id_pelanggan']?>" required="required" type="hidden" name="id_pelanggan"></Label></td>
+            <td><Label> <input value="<?php echo $pel['id_pelanggan']?>" required="required" type="hidden" name="id_pelanggan"></td>
             </tr>
             <tr>
                 <td>Nama Pelanggan</td>
                 <td>:</td>
-                <td><Label><input value="<?php echo $pel['nama_pelanggan']?>" required="required" type="text" name="nama_pelanggan"></Label></td>
+                <td><Label><input value="<?php echo $pel['nama_pelanggan']?>" required="required" type="text" name="nama_pelanggan"></td>
                 </tr>
         <tr>
             <td>Alamat</td>
             <td>:</td>
-            <td><Label><textarea required="required" name="alamat"cols="30" rows="5"><?php echo $pel['alamat']?></textarea></td>
+            <td><textarea required="required" name="alamat"cols="30" rows="5"><?php echo $pel['alamat']?></textarea></td>
         </tr>
         <tr>
             <td>No.Telephone</td>
             <td>:</td>
-            <td><Label><input value="<?php echo $pel['telpon']?>" required="required" type="number" name="telpon"></Label></td>
+            <td><Label><input value="<?php echo $pel['telpon']?>" required="required" type="number" name="telpon"></td>
         </tr>
         <tr>
             <td>Email</td>
